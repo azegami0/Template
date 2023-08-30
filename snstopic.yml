@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description:
+  "enable guardduty and set alert"
+Resources:
+  GuardDutySnsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      DisplayName: GuardDuty SNS Topic
+      TopicName: GuardDutySNSTopic
